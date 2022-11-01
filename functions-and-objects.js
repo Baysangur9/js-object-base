@@ -1,69 +1,36 @@
-function getName (name){
-    
-    return {
+function getName(messages){
+    return (messages.name)
+};
 
-        name: 'Baysangur',
+
+
+
+
+
+
+function getNames (obj)  {
+    return [obj.firstname , obj.lastname];
+};
+
+
+
+function concatNames (obj,lastname){
+    return`${obj.firstname} ${lastname}`
+}
+
+
+
+
+function correctName(firstPerson){
+    if (firstPerson.fathername === undefined){
+        return firstPerson.firstname
     }
-    
+    return`${firstPerson.firstname} ${firstPerson.lastname} ${firstPerson.fathername}`
 
 }
 
-let user = getName('Baysangur')
-console.log(user)
+console.log(correctName(firstPerson))
 
-
-function getNames (name){
-    
-    return {
-
-        firstName: 'Baysangur',
-        lastName: 'Elbiev'
-
-    }
-    
-
-}
-
-let use = getNames('Baysangur','Elbiev')
-console.log(use.firstName)
-console.log(use.lastName)
-
-
-function concatNames(obj,lastName){
-
-    return{
-        obj: 'Baysangur',
-        lastName: 'Elbiev',
-    }
-}
-
-let person = concatNames('Baysangur','lastName')
-console.log(person.obj,'Elbiev')
-
-
-
-const firstPerson = {
-    firstname: 'Baysangur',
-    lastname: 'Elbiev',
-    fathername: undefined
-  };
-  
-   
-console.log(firstPerson.firstname)
-
-
-
-const seconPerson = {
-    firstname: 'Baysangur',
-    lastname: 'Elbiev',
-    fathername: undefined
-  };
-  
-   
-console.log(seconPerson.firstname + ' ' + seconPerson.lastname + ' ' + seconPerson.fathername )
-    
-   
-        
 
 
 

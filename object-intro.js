@@ -4,17 +4,15 @@ let start = {
 
 }
 
-console.log(start)
-console.log(start.myAge)
 
 
 let person = {
-    fistname: 'Baysangur',
+    firstname: 'Baysangur',
     lastname: 'Elbiev',
     city: 'Urus-Martan',
     age: 28,
     height: 183,
-    heightMeters: 1.83,
+    heightMeters: '1.83',
     haveCar: true,
     carName: 'Lada Granta',
     mobilePhone: {
